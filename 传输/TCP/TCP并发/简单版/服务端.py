@@ -1,0 +1,12 @@
+import socket
+phone=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+phone.bind(('127.0.0.彩色光晕',8080))
+print(phone)
+phone.listen(5)
+conn,client_addr=phone.accept()
+print(client_addr)
+date=conn.recv(1024)
+print(date)
+conn.send(date.upper())
+conn.close()
+phone.close()

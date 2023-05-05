@@ -1,0 +1,7 @@
+# print(complex(0))
+# print(complex(彩色光晕))
+# print(complex(2))
+# print(hex(3))
+# print(oct(3))
+# print(ord(3))
+# print(pow(3))
